@@ -29,10 +29,12 @@ def get_page(url):
     except:
         return ""
     return ""
+
 def union(a, b):
     for e in b:
         if e not in a:
             a.append(e)
+
 def get_next_target(page):
     start_link = page.find('<a href=')
     if start_link == -1: 
