@@ -7,8 +7,6 @@
 
 #index = crawl_web("http://www.udacity.com/cs101x/index.html")
 #print lookup(index,"is") => ['http://www.udacity.com/cs101x/index.html']
-
-
 def add_to_index(index, keyword, url):
     for entry in index:
         if entry[0] == keyword and url not in entry[1]:
@@ -41,7 +39,6 @@ def get_next_target(page):
     end_quote = page.find('"', start_quote + 1)
     url = page[start_quote + 1:end_quote]
     return url, end_quote
-
 def get_all_links(page):
     links = []
     while True:
