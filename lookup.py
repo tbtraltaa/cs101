@@ -16,7 +16,6 @@ def add_to_index(index, keyword, url):
             return
     # not found, add new keyword to index
     index.append([keyword, [url]])
-
 def get_page(url):
     try:
         if url == "http://www.udacity.com/cs101x/index.html":
@@ -30,12 +29,10 @@ def get_page(url):
     except:
         return ""
     return ""
-
 def union(a, b):
     for e in b:
         if e not in a:
             a.append(e)
-
 def get_next_target(page):
     start_link = page.find('<a href=')
     if start_link == -1: 
