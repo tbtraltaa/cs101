@@ -19,7 +19,6 @@ def add_to_index(index, keyword, url):
 
 
 
-
 def get_page(url):
     try:
         if url == "http://www.udacity.com/cs101x/index.html":
