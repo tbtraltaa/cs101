@@ -13,8 +13,6 @@ def cached_execution(cache,code):
     if code not in cache:
         cache[code]=eval(code)
     return cache[code]
-    
-
 #Here is an example showing the desired behavior of cached_execution:
 
 def factorial(n):
@@ -30,6 +28,7 @@ print cached_execution(cache, 'factorial(50)')
 
 print "Second time:"
 ### second execution (should only print out the result)
+
 print cached_execution(cache, 'factorial(50)')
 
 #Here is a more interesting example using cached_execution 
