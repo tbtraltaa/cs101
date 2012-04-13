@@ -1,3 +1,4 @@
+#!/usr/in/env python
 from __future__ import with_statement
 import os
 import re
