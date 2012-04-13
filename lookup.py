@@ -35,6 +35,10 @@ def union(a, b):
         if e not in a:
             a.append(e)
 
+
+
+
+
 def get_next_target(page):
     start_link = page.find('<a href=')
     if start_link == -1: 
